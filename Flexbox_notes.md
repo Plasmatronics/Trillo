@@ -161,3 +161,11 @@ This alternative masking method allows us to do something simlar to allowing bg 
 
 # MEDIA QUERIES
 Note: CSS VARIABLES DONT WORK IN THE AREA OF A MEDIA QUERY WHERE YOU DECLARE MIN/MAX WIDTH---> must use css variables in this particular part.
+
+We can also use flex wrap on components --> not just text
+```css
+    @media only screen and (max-width: $bp-smallest){
+        flex-wrap: wrap;
+    }
+```
+In the above example we allow the search bar to go onto the next line.
