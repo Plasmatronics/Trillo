@@ -169,3 +169,22 @@ We can also use flex wrap on components --> not just text
     }
 ```
 In the above example we allow the search bar to go onto the next line.
+
+Graceful Degradation Technique: 
+```css
+        // //older browsers
+        background-image: url(../img/SVG/chevron-right.svg);
+        background-size: cover;
+
+        //new browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: var(--color-primary);
+            -webkit-mask-image: url(../img/SVG/chevron-right.svg);
+            -webkit-mask-size: cover;
+            mask-image: url(../img/SVG/chevron-right.svg);
+            mask-size: cover;
+            background-image: none;
+        }
+```
+
+if either of these properties exist in the browser the block applies, thus overwriting the "Old browser" code as its written later (cascades).
