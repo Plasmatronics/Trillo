@@ -158,3 +158,6 @@ This alternative masking method allows us to do something simlar to allowing bg 
         mask-image: url(../img/SVG/chevron-right.svg);
         mask-size: cover;
 ```
+
+# MEDIA QUERIES
+Note: CSS VARIABLES DONT WORK IN THE AREA OF A MEDIA QUERY WHERE YOU DECLARE MIN/MAX WIDTH---> must use css variables in this particular part.
