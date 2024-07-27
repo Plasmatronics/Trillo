@@ -271,8 +271,8 @@ body {
   .list__item:before {
     content: "";
     display: inline-block;
-    height: 2rem;
-    width: 2rem;
+    height: 1rem;
+    width: 1rem;
     margin-right: .7rem;
     background-color: var(--color-primary);
     mask-image: url(../img/SVG/chevron-right.svg);
